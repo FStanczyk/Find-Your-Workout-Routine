@@ -1,0 +1,19 @@
+:root {
+    --blue: #3511C6;
+    --cyan: #00C9D6 ;
+}
+.imageContainer{
+    position: absolute;
+    height: 95vh;
+    margin-top:-2vh;
+    width: 50%;
+    right: 0;
+    overflow: hidden;
+    z-index: -1;
+}
+.image{
+    height:100%;
+    width: 100%;
+    position: absolute;
+    object-fit: cover;
+}

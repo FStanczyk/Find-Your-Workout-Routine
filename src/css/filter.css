@@ -1,0 +1,85 @@
+:root {
+    --blue: #3511C6;
+    --cyan: #00C9D6 ;
+    --FilterButtonWidth: 216px;
+    --FilterButtonHeight: 58px;
+}
+
+.fullContainer{
+    display: grid;
+    grid-template-columns: 35% 55%;
+    grid-template-rows: 70vh;
+    column-gap: 5%;
+    justify-content: center;
+    overflow-x: hidden;
+}
+
+.filterContainer{
+    border-style: solid;
+    border-color: black;
+    text-align: center;
+    border-radius: 15px;
+    font-size: 24px;
+    overflow-y: scroll;
+    overflow-x: hidden;
+    display: flex;
+    flex-flow: column;
+    gap: 2%;
+
+}
+.buttonFilter{
+    color: white;
+    font-size: 18px;
+    text-align: center;
+    width: 70%;
+    height: var(--FilterButtonHeight);
+    line-height: var(--FilterButtonHeight);
+    background: linear-gradient( 90deg, var(--blue), black 25%);
+    margin-left: auto;
+    margin-right: auto;
+    border-radius: 24px;
+    cursor: pointer;
+    text-decoration: none;
+    transition: width 0.3s, height 0.3s;
+}
+
+::-webkit-scrollbar {
+    width: 20px;
+  }
+::-webkit-scrollbar-track {
+    border-radius: 15px;
+  }
+  /* Handle */
+::-webkit-scrollbar-thumb {
+    background: black;
+    border-radius: 10px;
+  }
+  
+.pickerContainer{
+    float: right;
+    border-radius: 15px;
+    border-style: solid;
+    border-color: black;
+    overflow-y: scroll;
+}
+
+.workoutContainer{
+    margin: 2%;
+    padding: 2%;
+    color: white;
+    background-color: var(--blue);
+    border-radius: 15px;
+    transition: background-color 0.2s;
+    overflow: auto;
+}
+.workoutContainer:hover{
+    background-color: var(--cyan);
+}
+#creator{
+    float: right;
+    opacity: 60%;
+
+}
+#name{
+    font-size: 22px;
+}
